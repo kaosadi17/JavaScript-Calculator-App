@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var n1, n2, result;
+		function setValues(){
+			n1 = Number(document.getElementById("num1").value);
+			n2 = Number(document.getElementById("num2").value);
+	    }
+	    function sum(){
+	    	setValues();
+	    	result = n1 + n2;
+	    	alert("The sum is equals to " +result);
+	    }
+	    function sub(){
+	    	setValues();
+	    	result = n1 - n2;
+	    	alert("The sub is equals to " +result);
+	    }
+	    function mult(){
+	    	setValues();
+	    	result = n1 * n2;
+	    	alert("The multiplication is equals to " +result);
+	    }
+	    function divd(){
+	    	setValues();
+	    	result = n1 / n2;
+	    	alert("The division is equals to " +result);
+	    }
+
+	</script>
+	<title>Calculator</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="num1"/>
+		<input type="text" id="num2"/>
+		<input type="button" onclick="sum()" value="sum"/>
+		<input type="button" onclick="sub()" value="sub" />
+		<input type="button" onclick="mult()" value="mult" />
+		<input type="button" onclick="divd()" value="divd" />
+	</div>
+
+</body>
+</html>
